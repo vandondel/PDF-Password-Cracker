@@ -51,8 +51,8 @@ tqdm>=4.64.0
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/AkshayRane05/PDF_Password_Cracker.git
-cd PDF_Password_Cracker
+git clone https://github.com/AkshayRane05/PDF-Password-Cracker.git
+cd PDF-Password-Cracker
 ```
 
 ## 📖 Usage
@@ -159,7 +159,7 @@ Cracking PDF: 45%|████████████▌              | 6,455,1
 ## 📁 Project Structure
 
 ```
-PDF_Password_Cracker/
+PDF-Password-Cracker/
 ├── pdf_cracker.py           # Main cracking script
 ├── requirements.txt         # Python dependencies
 ├── passwords.txt           # Sample wordlist for testing
@@ -239,8 +239,8 @@ Contributions are welcome! Areas for improvement:
 ### Development Setup
 
 ```bash
-git clone https://github.com/AkshayRane05/PDF_Password_Cracker.git
-cd PDF_Password_Cracker
+git clone https://github.com/AkshayRane05/PDF-Password-Cracker.git
+cd PDF-Password-Cracker
 pip install -r requirements.txt
 python pdf_cracker.py --help
 ```
@@ -273,7 +273,7 @@ This tool is provided for:
 ## 📞 Contact
 
 - **GitHub**: [@AkshayRane05](https://github.com/AkshayRane05)
-- **Issues**: [Report bugs or request features](https://github.com/AkshayRane05/PDF_Password_Cracker/issues)
+- **Issues**: [Report bugs or request features](https://github.com/AkshayRane05/PDF-Password-Cracker/issues)
 
 ---
 
@@ -281,6 +281,6 @@ This tool is provided for:
 
 ## 📈 Related Projects
 
-- [PDF Protection Tool](https://github.com/AkshayRane05/PDF_Protection_Tool) - Create password-protected PDFs
+- [PDF Protection Tool](https://github.com/AkshayRane05/PDF-Protection-Tool) - Create password-protected PDFs
 <!-- - [PDF Merger](https://github.com/AkshayRane05/PDF_Merger) - Combine multiple PDF files
 - [Document Security Scanner](https://github.com/AkshayRane05/Doc_Security_Scanner) - Analyze document security -->
